@@ -1,15 +1,23 @@
+
 body
 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 100%;
+    font-family: Georgia, serif
 }
 
-h1
+div
 {
+    display: flex;
+    flex-direction: column-reverse;
 
+
+    /*flex-flow: column;*/
+    /*justify-content: flex-end;*/
+    border: 10px solid powderblue;
 }
 
 p
 {
-
+    border: 10px solid darkred;
+    order: 5;
 }
+
