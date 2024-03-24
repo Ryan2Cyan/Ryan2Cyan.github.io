@@ -1,18 +1,56 @@
+div
+{
+    position: relative;
+}
+
+img
+{
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+tbody
+{
+    position: relative;
+    vertical-align: top;
+    border-spacing: 0;
+}
 
 body
 {
-    font-family: Georgia, serif
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-div
+html
 {
-    display: flex;
-    flex-direction: column-reverse;
+    min-width: 20rem;
+    overflow-y: scroll;
+    height: 100vh;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.00rem;
+    background-color: black;
+}
 
+@media all and (min-width: 25em)
+{
+    html
+    {
+        font-size: calc(0.8999rem + 0.4000vw);
+    }
+}
 
-    /*flex-flow: column;*/
-    /*justify-content: flex-end;*/
-    border: 10px solid powderblue;
+@media all and (min-width: 50rem)
+{
+    html
+    {
+        font-size: 1.1rem;
+    }
 }
 
 p
@@ -20,4 +58,80 @@ p
     border: 10px solid darkred;
     order: 5;
 }
+
+.b
+{
+
+}
+
+.q
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: url("16-03-24-Maribel_Banner.png");
+    background-origin: padding-box;
+    background-position-x: 50%;
+    background-position-y: 21%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgb(13,13,13);
+    display: block;
+    height: 348px;
+    position: relative;
+}
+
+.s
+{
+    /*color: rgb(13,13,13);*/
+    /*display: block;*/
+    /*height: 10px;*/
+    /*line-height: 27px;*/
+    /*position: relative;*/
+}
+
+/*Main Entry Section: (white section):*/
+.r
+{
+    overflow: hidden;
+    background-color: white;
+}
+
+.t
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 60rem;
+    background-color: white;
+}
+
+.u
+{
+    display: block;
+    margin: 0;
+    font-size: 1.54rem;
+    line-height: 1.39;
+    font-family: Georgia, "Times New Roman", Serif, serif;
+    background-color: rgb(13, 13, 13);
+    max-width: 35rem;
+    padding: 0 1rem;
+}
+
+/*Main Entry (Black Bar Separator):*/
+.v
+{
+    height: 2rem;
+}
+
+.h
+{
+    flex: auto;
+
+}
+
+.c
+{
+    background-color: white;
+}
+
+
 
