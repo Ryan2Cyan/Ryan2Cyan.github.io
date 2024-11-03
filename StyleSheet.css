@@ -1,11 +1,44 @@
+@font-face {  font-family: Poppins; src: url("Fonts/Poppins-Regular.ttf");  }
+@font-face {  font-family: "Montserrat Thin"; src: url("Fonts/Montserrat-VariableFont_wght.ttf");  }
+
 body
 {
 
 }
 
+a
+{
+    font-family: Poppins, serif;
+}
+
+p
+{
+    font-family: Poppins, serif;
+}
+
 h1
 {
+    font-family: "Mongolian Baiti", serif;
+}
 
+h2
+{
+    font-family: "Mongolian Baiti", serif;
+}
+
+h3
+{
+    font-family: Poppins, serif;
+}
+
+h4
+{
+    font-family: Poppins, serif;
+}
+
+h5
+{
+    font-family: Poppins, serif;
 }
 
 .flex-container
