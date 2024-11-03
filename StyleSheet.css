@@ -5,13 +5,14 @@ html
 {
     display: flex;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 body
 {
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 40rem;
 }
 
 a
@@ -19,36 +20,17 @@ a
     font-family: Poppins, serif;
 }
 
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 p
 {
     font-family: Poppins, serif;
-}
-
-h1
-{
-    font-family: "Mongolian Baiti", serif;
-    margin-bottom: 1rem;
-}
-
-h2
-{
-    margin-top: 0;
-    font-family: "Mongolian Baiti", serif;
-}
-
-h3
-{
-    font-family: Poppins, serif;
-}
-
-h4
-{
-    font-family: Poppins, serif;
-}
-
-h5
-{
-    font-family: Poppins, serif;
+    font-size: 0.8rem;
 }
 
 .flex
@@ -57,49 +39,81 @@ h5
     justify-content: center;
 }
 
-.flex-container
+.flex-container-column
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.flex-item-column
+{
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 1rem;
+}
+
+.flex-item-column-text
+{
+    border: 1px solid grey;
+    padding: 1rem;
+    height: 7.5rem;
+    width: 5rem;
+}
+
+.flex-container-column > p
+{
+    font-size: 0.75rem;
+}
+
+.flex-container-row
 {
     display: flex;
     flex-flow: nowrap;
-    margin: 1rem;
+    justify-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
-    /*background: blue;*/
 }
 
-.flex-container > div
+.flex-container-row > div
 {
     padding: 20px;
-
 }
 
-.flex-item
+.flex-container-row > div > img
+{
+    width: 100%;
+}
+
+.flex-item-row
+{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+}
+
+.flex-item-small
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex: 1 1 auto;
+    max-width: 5rem;
+}
+
+.flex-item-small + .flex-item-small
+{
+    padding-left: 13.5rem;
 }
 
 .flex-item-bordered
 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex: 1 1 auto;
     border: 1px solid black;
 }
 
-/*Gap in-between flex items*/
-.flex-item + .flex-item, .flex-item-bordered + .flex-item, .flex-item + .flex-item-bordered, .flex-item-bordered + .flex-item, .flex-item-bordered + .flex-item-bordered
+.flex-container-text .flex-container-row
 {
-    margin-left: 1rem;
-    padding-left: 2rem;
-}
-
-.flex-container > div > img
-{
-    max-width: 100%;
+    padding-bottom: 0;
 }
 
 .title-bar
@@ -109,6 +123,7 @@ h5
     align-items: center;
     padding-top: 2.5rem;
     margin-bottom: 2.5rem;
+    font-family: "Montserrat Thin", serif;
 }
 
 .title-bar > h1
@@ -119,4 +134,22 @@ h5
 .title-bar > h2
 {
     margin: 0;
+}
+
+.subheading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+    font-family: "Montserrat Thin", serif;
+    font-size: 1rem;
+}
+
+.border
+{
+    border: 1px solid grey;
+    padding: 1rem;
 }

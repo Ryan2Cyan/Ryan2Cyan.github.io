@@ -12,33 +12,116 @@
     </div>
 
     <!-- Summary: -->
-    <p>
-      Returns the length of a 2D or 3D vector (how far it is from the origin [0, 0]).
-    </p>
 
-    <div class="flex-container">
-      <div class="flex-item-bordered"> <img src="VectorLength_0.png" alt="VectorLength_"> </div>
-      <div class="flex-item-bordered"> <img src="VectorLength_2.png" alt="VectorLength_"> </div>
-    </div>
+    <h5 class="subheading" style="padding-top: 0.5rem">Summary:</h5>
+    <div class="border">
+      <p>
+        Returns the length/magnitude of a 2D or 3D vector (how far it is from the origin [0, 0]). This node can be
+        used to create a radial shape.
+      </p>
 
-    <div class="flex-container">
-      <div class="flex-item"> <img src="VectorLength_1.png" alt="VectorLength_"> </div>
+
+      <div class="flex-container-row">
+        <div class="flex-item-row"> <img src="VectorLength_Summary_2.png" alt="VectorLength_2"> </div>
+        <div class="flex-item-row"> <img src="VectorLength_Summary_3.png" alt="VectorLength_3"> </div>
+      </div>
+
+      <div class="flex-container-row">
+        <div class="flex-item-small" > <img src="VectorLength_Summary_4.png" alt="VectorLength_4"> </div>
+        <div class="flex-item-small"> <img src="VectorLength_Summary_5.png" alt="VectorLength_5"> </div>
+      </div>
     </div>
 
     <!-- Node Breakdown: -->
-    <h5>Node Breakdown</h5>
+    <h5 class="subheading">Node Breakdown:</h5>
+    <div class="border">
 
+      <div class="flex-container-row">
+
+        <div class="flex-container-column">
+          <p class="flex-item-column-text"> <b>Vector 3</b> (<i>Vector3</i>): Vector3 input. </p>
+          <p class="flex-item-column-text"> <b>Vector 2</b> (<i>Vector2</i>): Vector2 input. </p>
+        </div>
+
+        <div class="flex-item-row">
+          <img src="VectorLength_Summary_6.png" alt="VectorLength_6">
+        </div>
+
+        <div class="flex-container-column">
+          <p class="flex-item-column-text"> <b>V3 Length 3</b> (<i>Vector3</i>): The length of Vector 3 input. </p>
+          <p class="flex-item-column-text"> <b>V2 Length</b> (<i>Vector2</i>): The length of Vector 2 input. </p>
+        </div>
+      </div>
+
+      <div class="flex-container-row">
+        <img style="padding-top: 2rem" src="VectorLength_Summary_7.png"  alt="VectorLength_7">
+      </div>
+
+    </div>
 
     <!-- Mathematics: -->
-    <h5>Mathematics</h5>
-    <p>
-      The mathematical formula to calculate a vectors length is:
-    </p>
+    <h5 class="subheading">Mathematics</h5>
+    <div class="border">
+      <p>
+        The mathematical formula to calculate a vectors length is:
+      </p>
+
+      <div class="flex-container-column">
+        <div class="flex-container-row">
+          <div class="flex-item-row" style="width: 3rem">
+            <p><b>Vector2<br>
+            Vector3</b></p></div>
+          <div class="flex-item-row" style="width: 10rem">
+            <p><b>sqrt(x * x + y * y)<br>
+              sqrt(x * x + y * y + z * z) </b></p></div>
+        </div>
+      </div>
+
+      <p>Example:
+        We have a 2D coordinate where <b>x = 0.77</b> and <b>y = -0.12</b>. We need to find the length of this 2D vector
+        <b>[0.77, -0.12]</b> from the origin <b>[0, 0]</b>:
+      </p>
+
+      <div class="flex-container-column">
+        <div class="flex-container-row">
+          <div class="flex-item-row" style="width: 10rem">
+            <p><b>
+              xSqr = x * x<br>
+              ySqr = y * y<br>
+              SumXY = xSqr + ySqr <br>
+              Length = sqrt(SumXY)<br>
+              Result<br>
+            </b></p>
+          </div>
+          <div class="flex-item-row" style="width: 10rem">
+            <p><b>
+              0.5929 = 0.77 * 0.77<br>
+              0.0144 = -0.12 * -0.12<br>
+              0.6073 = 0.5929 + 0.0144<br>
+              0.78 = sqrt(0.6073)<br>
+              0.78<br>
+            </b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Sources: -->
-    <h5>Sources</h5>
+    <h5 class="subheading">Usages</h5>
+    <div class="border">
+      <p>(1) You can use the vector’s length to change a UV/texture coordinates to resemble a circle:</p>
 
-    <p></p>
-    <a href="../../../index.html">Index</a>
+      <div class="flex-container-column" style="padding: 1rem">
+        <img class="flex-item-column" src="VectorLength_Summary_8.png" alt="VectorLength_8">
+      </div>
+      <div class="flex-container-column" style="padding: 1rem">
+        <img class="flex-item-column" src="VectorLength_Summary_9.png" alt="VectorLength_9">
+      </div>
+
+    </div>
+    <div class="flex-container-row">
+      <a style="padding-top: 3rem; padding-bottom: 5rem" href="../../../index.html">Index</a>
+    </div>
   </body>
 </html>
