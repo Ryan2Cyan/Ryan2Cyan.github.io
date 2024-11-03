@@ -1,9 +1,17 @@
 @font-face {  font-family: Poppins; src: url("Fonts/Poppins-Regular.ttf");  }
 @font-face {  font-family: "Montserrat Thin"; src: url("Fonts/Montserrat-VariableFont_wght.ttf");  }
 
+html
+{
+    display: flex;
+    justify-content: center;
+}
+
 body
 {
-
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a
@@ -19,10 +27,12 @@ p
 h1
 {
     font-family: "Mongolian Baiti", serif;
+    margin-bottom: 1rem;
 }
 
 h2
 {
+    margin-top: 0;
     font-family: "Mongolian Baiti", serif;
 }
 
@@ -41,18 +51,72 @@ h5
     font-family: Poppins, serif;
 }
 
+.flex
+{
+    display: flex;
+    justify-content: center;
+}
+
 .flex-container
 {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-flow: nowrap;
+    margin: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /*background: blue;*/
 }
 
 .flex-container > div
 {
-    width: 100px;
-    text-align: center;
-    align-content: center;
-    line-height: 75px;
-    font-size: 30px;
+    padding: 20px;
+
+}
+
+.flex-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.flex-item-bordered
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+    border: 1px solid black;
+}
+
+/*Gap in-between flex items*/
+.flex-item + .flex-item, .flex-item-bordered + .flex-item, .flex-item + .flex-item-bordered, .flex-item-bordered + .flex-item, .flex-item-bordered + .flex-item-bordered
+{
+    margin-left: 1rem;
+    padding-left: 2rem;
+}
+
+.flex-container > div > img
+{
+    max-width: 100%;
+}
+
+.title-bar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.title-bar > h1
+{
+    margin: 0;
+}
+
+.title-bar > h2
+{
+    margin: 0;
 }
